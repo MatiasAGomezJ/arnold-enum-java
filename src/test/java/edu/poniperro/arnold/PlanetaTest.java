@@ -23,7 +23,6 @@ public class PlanetaTest {
         assertThat(planetasIncluidos).isEqualTo(Planeta.values().length);
     }
 
-
     @Test
     public void PlanetaConstructorTest() {
         // voy a asegurarme de que los metodos de los Enum Types
