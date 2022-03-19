@@ -11,8 +11,9 @@ public enum Planeta {
 
     private double masa;
     private double radio;
+    private final double G = 6.67300E-11;
 
-    private Planeta(double masa, double radio){
+    private Planeta(double masa, double radio) {
         this.masa = masa;
         this.radio = radio;
     }
@@ -23,5 +24,9 @@ public enum Planeta {
 
     public double getRadio(){
         return radio;
+    }
+
+    private double gravedadEnSuperficie() {
+        return G * getMasa() / getRadio();
     }
 }
