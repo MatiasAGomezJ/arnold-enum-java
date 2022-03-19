@@ -20,4 +20,8 @@ public enum Planeta {
     public double getMasa(){
         return masa;
     }
+
+    public double getRadio(){
+        return radio;
+    }
 }
