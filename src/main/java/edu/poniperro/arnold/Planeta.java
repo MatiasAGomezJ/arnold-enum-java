@@ -29,4 +29,9 @@ public enum Planeta {
     private double gravedadEnSuperficie() {
         return G * getMasa() / getRadio();
     }
+
+    private double getMasaFromPesoTerrestre(double pesoHumano) {
+        return pesoHumano / Planeta.EARTH.gravedadEnSuperficie();
+    }
+
 }
