@@ -34,4 +34,7 @@ public enum Planeta {
         return pesoHumano / Planeta.EARTH.gravedadEnSuperficie();
     }
 
+    public double pesoSuperficie(double pesoHumano) {
+        return getMasaFromPesoTerrestre(pesoHumano) * gravedadEnSuperficie();
+    }
 }
